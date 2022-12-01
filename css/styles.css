@@ -115,6 +115,7 @@ p {
   font-size: 1rem;
   color: var(--mainBlack);
   line-height: 1.625rem;
+  font-family: var(--secondaryFont);
 }
 .section-title:after {
   content: "";
@@ -136,6 +137,13 @@ p {
     opacity 0s ease-in-out 0s;
   transition: background 0s ease-in-out 0s, margin-top 0s ease-in-out 0s,
     opacity 0s ease-in-out 0s;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
 }
 
 .header_wrapper .navbar-toggler {
@@ -229,7 +237,7 @@ p {
   align-items: center;
   justify-content: center;
 }
-.banner_wrapper .swiper .slide-caption p {
+/* .banner_wrapper .swiper .slide-caption p {
   max-width: 37.5rem;
   margin: 0 auto;
   color: var(--offWhite);
@@ -257,14 +265,66 @@ p {
 .booking-area .form-select:focus {
   outline: none;
   box-sizing: none;
-}
+} */
 
 /* About */
 .about_wrapper {
-  padding-top: 9.375rem;
+  padding-top: 10.375rem;
 }
 
 .about_wrapper p {
   font-family: var(--secondaryFont);
   font-weight: 200;
 }
+
+/* Rooms */
+.rooms_wrapper .room-items {
+  position: relative;
+  overflow: hidden;
+}
+.rooms_wrapper .room-items img {
+  width: 100%;
+  -webkit-transition: all 400ms ease-in 0s;
+  transition: all 400ms ease-in 0s;
+}
+.rooms_wrapper .room-items:hover img {
+  -webkit-transform: scale3d(1.05, 1.05, 1.05);
+  transform: scale3d(1.05, 1.05, 1.05);
+}
+.rooms_wrapper .room-items::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--mainBlack);
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: all 400ms ease-in 0s;
+  transition: all 400ms ease-in 0s;
+}
+.rooms_wrapper .room-items:hover:before {
+  opacity: 0.6;
+}
+.rooms_wrapper .room-item-wrap {
+  position: absolute;
+  left: 1.887rem;
+  right: 1.887rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.rooms_wrapper .room-items .room-content {
+  /* border: 0.122rem solid var(--mainWhite); */
+  padding: 5rem 1.875rem;
+  -webkit-transform: scale3d(1.2, 1.2, 1.2);
+  transform: scale3d(1.2, 1.2, 1.2);
+  transition: all 500s ease-in 0s;
+  opacity: 1;
+}
+/* .rooms_wrapper .room-items:hover .room-content {
+  opacity: 1;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+} */
