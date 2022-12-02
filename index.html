@@ -1,110 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Hotel in Leh</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Hotel in Leh</title>
+    <!-- FAVICON -->
+    <link rel="icon" href="/images/favicon.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- SWIPER SLIDER -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- CUSTOM STYLE -->
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/responsive-style.css" />
+  </head>
 
-  <!-- FAVICON -->
-  <link rel="icon" href="/images/favicon.png" type="image/png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <!-- SWIPER SLIDER -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <!-- CUSTOM STYLE -->
-  <link rel="stylesheet" href="/css/styles.css">
-  <link rel="stylesheet" href="/css/responsive-style.css">
-</head>
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+    <!-- Navbar Start -->
+    <header class="header_wrapper">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <!-- <img src="/images/logo.png" class="img-fluid" alt="logo" /> -->
+            <p class="border-box">Hotel Honey Bee</p>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-stream navbar-toggler-icon"></i>
+          </button>
 
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
-
-  <!-- Navbar Start -->
-  <header class="header_wrapper">
-    <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <!-- <img src="/images/logo.png" class="img-fluid" alt="logo" /> -->
-         <p>Mikza Stay</p>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fas fa-stream navbar-toggler-icon"></i>
-        </button>
-
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav menu-navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#rooms">Rooms</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#gallery">Gallery</a>
-            </li>
-            <li class="nav-item mt-3 mt-lg-0">
-              <a class="main-btn " href="#book">Book Now</a>
-            </li>
-          </ul>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav menu-navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#rooms">Rooms</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">Gallery</a>
+              </li>
+              <li class="nav-item mt-3 mt-lg-0">
+                <a class="main-btn" href="#book">Book Now</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+    </header>
+    <!-- Navbar End -->
+
+    <!-- Banner Start -->
+    <section id="home" class="banner_wrapper p-0">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide"
+            style="background-image: url(./images/slider/slider7.png)"
+          >
+            <div class="slide-caption text-center">
+              <div>
+                <h1>welcome to hotel in Leh</h1>
+                <p class="text-white">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+                  accusantium cum asperiores, tenetur ex nam harum atque labore
+                  suscipit reprehenderit?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="swiper-slide"
+            style="background-image: url(./images/slider/slider4.png)"
+          >
+            <div class="slide-caption text-center">
+              <div>
+                <h1>welcome to hotel in Leh</h1>
+                <p class="text-white">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+                  accusantium cum asperiores, tenetur ex nam harum atque labore
+                  suscipit reprehenderit?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="swiper-slide"
+            style="background-image: url(./images/slider/slider5.png)"
+          >
+            <div class="slide-caption text-center">
+              <div>
+                <h1>welcome to hotel in Leh</h1>
+                <p class="text-white">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+                  accusantium cum asperiores, tenetur ex nam harum atque labore
+                  suscipit reprehenderit?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
       </div>
-    </nav>
-  </header>
-  <!-- Navbar End -->
-
-  <!-- Banner Start -->
-  <section id="home" class="banner_wrapper p-0">
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide" style="background-image:url(./images/slider/slider7.png)">
-          <div class="slide-caption text-center">
-            <div>
-              <h1>welcome to hotel in Leh</h1>
-              <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Eos accusantium cum asperiores, tenetur ex nam
-                harum atque labore suscipit reprehenderit?
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide" style="background-image:url(./images/slider/slider4.png)">
-          <div class="slide-caption text-center">
-            <div>
-              <h1>welcome to hotel in Leh</h1>
-              <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Eos accusantium cum asperiores, tenetur ex nam
-                harum atque labore suscipit reprehenderit?
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide" style="background-image:url(./images/slider/slider5.png)">
-          <div class="slide-caption text-center">
-            <div>
-              <h1>welcome to hotel in Leh</h1>
-              <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Eos accusantium cum asperiores, tenetur ex nam
-                harum atque labore suscipit reprehenderit?
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-pagination"></div>
-    </div>
-    <!-- <div class="container booking-area">
+      <!-- <div class="container booking-area">
       <form class="row">
         <div class="col-lg mb-3 mb-lg-0">
           <input type="date" class="form-control" placeholder="Date">
@@ -141,102 +174,377 @@
         </div>
       </form>
     </div> -->
-  </section>
-  <!-- Banner End -->
+    </section>
+    <!-- Banner End -->
 
-  <!-- About start -->
-  <section id="about" class="about_wrapper">
-    <div class="container">
-      <div class="row flex-lg-row flex-column-reverse">
-        <div class="col-lg-6 text-center text-lg-start">
-          <h3>Welcome to <span>Hotel Mikza. <br class="d-none d-lg-block">The paradise</span> for your stay in Leh.</h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis nulla expedita illo reprehenderit inventore consequatur asperiores totam, maiores atque neque saepe, accusantium aperiam ducimus quia culpa! A qui magni quidem laboriosam reprehenderit accusantium nesciunt ipsam?</p>
-          <a href="#" class="main-btn mt-4">Know More</a>
-        </div>
-        <div class="col-lg-6 mb-4 mb-lg-0 ps-lg-4 text-center">
-          <img src="/images/about-img.svg" class="img-fluid" alt="about"/>
+    <!-- About start -->
+    <section id="about" class="about_wrapper">
+      <div class="container">
+        <div class="row flex-lg-row flex-column-reverse">
+          <div class="col-lg-6 text-center text-lg-start">
+            <h3>
+              Welcome to
+              <span
+                >Hotel Mikza. <br class="d-none d-lg-block" />The paradise</span
+              >
+              for your stay in Leh.
+            </h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis
+              nulla expedita illo reprehenderit inventore consequatur asperiores
+              totam, maiores atque neque saepe, accusantium aperiam ducimus quia
+              culpa! A qui magni quidem laboriosam reprehenderit accusantium
+              nesciunt ipsam?
+            </p>
+            <!-- <a href="#" class="main-btn mt-4">Know More</a> -->
+          </div>
+          <div class="col-lg-6 mb-4 mb-lg-0 ps-lg-4 text-center">
+            <img src="/images/about-img.svg" class="img-fluid" alt="about" />
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- About End -->
+    </section>
+    <!-- About End -->
 
-  <!-- Rooms Start -->
-  <section id="rooms" class="rooms_wrapper">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-12 section-title text-center mb-5">
+    <!-- Rooms Start -->
+    <section id="rooms" class="rooms_wrapper">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 section-title text-center mb-5">
             <!-- <h6>Our Favorite Rooms</h6> -->
             <h3>Our Favorite Rooms</h3>
+          </div>
+        </div>
+        <div class="row m-0">
+          <div class="col-md-4 mb-4 mb-lg-0">
+            <div class="room-items">
+              <img
+                src="./images/room/room1.webp"
+                class="img-fluid"
+                alt="room"
+              />
+              <div class="room-item-wrap">
+                <div class="room-content">
+                  <h5 class="text-white mb-lg-5 text-decoration-underline">
+                    Super Deluxe
+                  </h5>
+                  <p class="text-white">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ratione mollitia excepturi repudiandae facilis commodi ipsa.
+                  </p>
+                  <p class="text-white fw-bold mt-lg-4">INR 3800/ Per Night</p>
+                  <a class="main-btn border-white text-white mt-lg-5" href="#"
+                    >Book Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 mb-lg-0">
+            <div class="room-items">
+              <img
+                src="./images/room/room2.webp"
+                class="img-fluid"
+                alt="room"
+              />
+              <div class="room-item-wrap">
+                <div class="room-content">
+                  <h5 class="text-white mb-lg-5 text-decoration-underline">
+                    Super Deluxe
+                  </h5>
+                  <p class="text-white">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ratione mollitia excepturi repudiandae facilis commodi ipsa.
+                  </p>
+                  <p class="text-white fw-bold mt-lg-4">INR 3800/ Per Night</p>
+                  <a class="main-btn border-white text-white mt-lg-5" href="#"
+                    >Book Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 mb-lg-0">
+            <div class="room-items">
+              <img
+                src="./images/room/room3.webp"
+                class="img-fluid"
+                alt="room"
+              />
+              <div class="room-item-wrap">
+                <div class="room-content">
+                  <h5 class="text-white mb-lg-5 text-decoration-underline">
+                    Super Deluxe
+                  </h5>
+                  <p class="text-white">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ratione mollitia excepturi repudiandae facilis commodi ipsa.
+                  </p>
+                  <p class="text-white fw-bold mt-lg-4">INR 3800/ Per Night</p>
+                  <a class="main-btn border-white text-white mt-lg-5" href="#"
+                    >Book Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="row m-0">
-        <div class="col-md-4 mb-4 mb-lg-0">
-          <div class="room-items">
-            <img src="./images/room/room1.webp" class="img-fluid" alt="room" />
-            <div class="room-item-wrap">
-              <div class="room-content">
-                <h5 class="text-white mb-lg-5 text-decoration-underline">Super Deluxe</h5>
-                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione mollitia excepturi repudiandae facilis commodi ipsa.</p>
-                <p class="text-white fw-bold mt-lg-4">INR 3800/ Per Night</p>
-                <a class="main-btn border-white text-white mt-lg-5" href="#">Book Now</a>
+    </section>
+    <!-- Rooms End -->
+
+    <!-- Services Start -->
+    <section id="services" class="services_wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 section-title text-center mb-5">
+            <h6>Your comfortable stay</h6>
+            <h3>Our services</h3>
+          </div>
+        </div>
+        <div class="row align-items-center service-item-wrap">
+          <div class="col-lg-7 p-lg-0">
+            <div class="tab-content" id="myTabContent">
+              <div
+                class="tab-pane fade active show"
+                id="restaurant"
+                role="tabpanel"
+              >
+                <img src="./images/services/service2.webp" alt="" />
+              </div>
+              <div class="tab-pane fade" id="packages" role="tabpanel">
+                <img src="./images/services/service3.webp" alt="" />
+              </div>
+              <div class="tab-pane fade" id="library" role="tabpanel">
+                <img src="./images/services/service2.webp" alt="" />
+              </div>
+              <div class="tab-pane fade" id="taxi" role="tabpanel">
+                <img src="./images/services/service4.webp" alt="" />
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-4 mb-4 mb-lg-0">
-          <div class="room-items">
-            <img src="./images/room/room2.webp" class="img-fluid" alt="room" />
-            <div class="room-item-wrap">
-              <div class="room-content">
-                <h5 class="text-white mb-lg-5 text-decoration-underline">Super Deluxe</h5>
-                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione mollitia excepturi repudiandae facilis commodi ipsa.</p>
-                <p class="text-white fw-bold mt-lg-4">INR 3800/ Per Night</p>
-                <a class="main-btn border-white text-white mt-lg-5" href="#">Book Now</a>
-              </div>
+          <div class="col-lg-5 position-relative">
+            <div class="service-menu-area">
+              <ul class="nav">
+                <li>
+                  <a data-bs-toggle="tab" href="#restaurant" class="active">
+                    <span class="service-icon">
+                      <img
+                        src="./images/services/service-icon3.png"
+                        alt="restaurant"
+                      />
+                    </span>
+                    <h5>Restaurant</h5>
+                    <p>
+                      We serve <span>Indian, Local and Chinese</span> cuisines.
+                    </p>  
+                  </a>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="tab" href="#packages">
+                    <span class="service-icon">
+                      <img
+                        src="./images/services/service-icon4.png"
+                        alt="tour packages"
+                      />
+                    </span>
+                    <h5>Tour Packages</h5>
+                    <p>
+                      We provide tour packages in
+                      <span>Ladakh, Zanskar and Kashmir</span>
+                    </p>
+                  </a>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="tab" href="#taxi">
+                    <span class="service-icon">
+                      <img
+                        src="./images/services/service-icon1.png"
+                        alt="taxi"
+                      />
+                    </span>
+                    <h5>Taxi</h5>
+                    <p>
+                      We provide
+                      <span> Toyota Innova and Mahindra Xylo,</span> for taxi
+                      service.
+                    </p>
+                  </a>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="tab" href="#library">
+                    <span class="service-icon">
+                      <img
+                        src="./images/services/service-icon2.png"
+                        alt="library"
+                      />
+                    </span>
+                    <h5>Library</h5>
+                    <p>
+                      We also have <span> Library</span> for guest how loves to
+                      read.
+                    </p>
+                  </a>
+                </li>
+              </ul>
+
             </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4 mb-lg-0">
-          <div class="room-items">
-            <img src="./images/room/room3.webp" class="img-fluid" alt="room" />
-            <div class="room-item-wrap">
-              <div class="room-content">
-                <h5 class="text-white mb-lg-5 text-decoration-underline">Super Deluxe</h5>
-                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione mollitia excepturi repudiandae facilis commodi ipsa.</p>
-                <p class="text-white fw-bold mt-lg-4">INR 3800/ Per Night</p>
-                <a class="main-btn border-white text-white mt-lg-5" href="#">Book Now</a>
-              </div>
-            </div>
+
           </div>
         </div>
       </div>
+      <div class="counter mt-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+                    <h1>
+                        <span id="count1"></span>+
+                    </h1>
+                    <p>Happy Guests</p>
+                </div>
+                <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+                    <h1>
+                        <span id="count2"></span>+
+                        </h2>
+                        <p>Repeat Guests</p>
+                </div>
+                <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+                    <h1>
+                        <span id="count3"></span>+
+                        </h2>
+                        <p>Five Start Ratings</p>
+                </div>
+                <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+                    <h1>
+                        <span id="count4"></span>+
+                        </h2>
+                        <p>Breakfast Served</p>
+                </div>
+            </div>
+        </div>
     </div>
+    </section>
+    <!-- Services End -->
+
+    <!-- Gallery Start -->
+
+    <section id="gallery" class="gallery_wrapper">
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-12 section-title text-center mb-5">
+                  <h6>Best Pictures Of Our Hotel</h6>
+                  <h3>Our Gallery</h3>
+              </div>
+          </div>
+          <div class="row g-0">
+              <div class="col-lg-3 col-md-6 gallery-item">
+                  <img src="./images/gallery/1.webp" class="img-fluid w-100">
+                  <div class="gallery-item-content"></div>
+              </div>
+              <div class="col-lg-3 col-md-6 gallery-item">
+                  <img src="./images/gallery/2.webp" class="img-fluid w-100">
+                  <div class="gallery-item-content"></div>
+              </div>
+              <div class="col-lg-3 col-md-6 gallery-item">
+                  <img src="./images/gallery/3.webp" class="img-fluid w-100">
+                  <div class="gallery-item-content"></div>
+              </div>
+              <div class="col-lg-3 col-md-6 gallery-item">
+                  <img src="./images/gallery/4.webp" class="img-fluid w-100">
+                  <div class="gallery-item-content"></div>
+              </div>
+              <div class="col-md-6 gallery-item">
+                  <img src="./images/gallery/5.webp" class="img-fluid w-100">
+                  <div class="gallery-item-content"> </div>
+              </div>
+              <div class="col-md-6 gallery-item">
+                  <img src="./images/gallery/6.webp" class="img-fluid w-100">
+                  <div class="gallery-item-content"> </div>
+              </div>
+          </div>
+      </div>
   </section>
-  <!-- Rooms End -->
+    <!-- Gallery End -->
 
-  <!-- Services Start -->
-  <!-- <section id="services" class="services_wrapper">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 section-title text-center mb-">
-          <h6>Your </h6>
-        </div>
+    <!-- Footer Start -->
+    <section id="contact" class="footer_wrapper mt-3 mt-md-0 pb-0">
+      <div class="container pb-3">
+          <div class="row">
+              <div class="col-lg-3 col-md-6">
+                  <h5>Hotel Location</h5>
+                  <p class="ps-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dignissim erat ut laoreet
+                      pharetra....</p>
+                  <div class="contact-info">
+                      <ul class="list-unstyled">
+                          <li><a href="#"><i class="fa fa-home me-3"></i> No. 96, South City, London</a></li>
+                          <li><a href="#"><i class="fa fa-phone me-3"></i>+1 222 3333</a></li>
+                          <li><a href="#"><i class="fa fa-envelope me-3"></i>info@example.com</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <h5>More Links</h5>
+                  <ul class="link-widget p-0">
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Our Office</a></li>
+                      <li><a href="#">Delivery</a></li>
+                      <li><a href="#">Our Store</a></li>
+                      <li><a href="#">Guarantee</a></li>
+                      <li><a href="#">Buy Gift Card</a></li>
+                      <li><a href="#">Return Policy</a></li>
+                  </ul>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <h5>Demo Links</h5>
+                  <ul class="link-widget p-0">
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Our Office</a></li>
+                      <li><a href="#">Delivery</a></li>
+                      <li><a href="#">Our Store</a></li>
+                      <li><a href="#">Guarantee</a></li>
+                      <li><a href="#">Buy Gift Card</a></li>
+                      <li><a href="#">Return Policy</a></li>
+                  </ul>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <h5>Newsletter</h5>
+                  <div class="form-group mb-4">
+                      <input type="email" class="form-control bg-transparent" placeholder="enter your email here">
+                      <button type="submit" class="main-btn rounded-2 mt-3 border-white text-white">Subscribe</button>
+                  </div>
+                  <h5>Stay Connected</h5>
+                  <ul class="social-network d-flex align-items-center p-0">
+                      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                      <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+                  </ul>
+              </div>
+          </div>
       </div>
-    </div>
-  </section> -->
-  <!-- Services End -->
-  <!-- BOOTSTRAP 5 JS CDN Links -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-    crossorigin="anonymous"></script>
-  <!-- SWIPER JS Links-->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <!-- CUSTOM JS Links -->
-  <script src="/js/main.js"></script>
-</body>
+      <div class="container-fluid copyright-section">
+          <p>Copyright <a href="#">Â© CODE4EDUCATION.</a> All Rights Reserved</p>
+      </div>
+  </section>
+  <!-- Footer End -->
 
+    <!-- BOOTSTRAP 5 JS CDN Links -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <!-- SWIPER JS Links-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- CUSTOM JS Links -->
+    <script src="/js/main.js"></script>
+  </body>
 </html>
