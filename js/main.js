@@ -46,8 +46,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
             }, step);
     }
-    counter("count1", 0, 800, 1000);
-    counter("count2", 50, 500, 1000);
-    counter("count3", 0, 400, 3000);
-    counter("count4", 0, 2000, 3000);
+    // counter("count1", 0, 800, 1000);
+    // counter("count2", 50, 500, 1000);
+    // counter("count3", 0, 400, 3000);
+    // counter("count4", 0, 2000, 3000);
 });
