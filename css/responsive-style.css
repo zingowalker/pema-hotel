@@ -144,4 +144,8 @@
   .room-items .room-content p {
     font-size: 0.5rem;
   }
+  /* Footer */
+  .footer_wrapper > div {
+    padding: 0 1.875rem;
+  }
 }

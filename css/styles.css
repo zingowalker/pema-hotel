@@ -345,6 +345,7 @@ p {
 }
 .service-menu-area ul li a {
   display: block;
+
   margin-bottom: 2.8125rem;
 }
 .service-menu-area ul li a .service-icon {
@@ -387,7 +388,7 @@ p {
 }
 
 .counter {
-  background-image: url("../images/counter-bg.webp");
+  background-image: url("../images/counter-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -487,4 +488,86 @@ p {
 .gallery-item:hover .gallery-item-content:after {
   left: 0;
   opacity: 1;
+}
+
+/* Footer */
+
+.footer_wrapper {
+  background-color: var(--mainBlack);
+}
+
+.footer_wrapper h5 {
+  color: var(--mainGrey);
+  margin-bottom: 1.25rem;
+}
+
+.footer_wrapper ul li {
+  margin-bottom: 0.5rem;
+  list-style: none;
+}
+
+.footer_wrapper .contact-info li a {
+  color: var(--primaryColor);
+}
+
+.footer_wrapper .link-widget li a,
+.footer_wrapper p {
+  color: var(--darkGrey);
+  font-size: 0.875rem;
+  padding-left: 1.5rem;
+  position: relative;
+  -webkit-transition: all o.3s ease-out 0s;
+  transition: all o.3s ease-out 0s;
+}
+
+.footer_wrapper .link-widget li a::before {
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0.3rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.footer_wrapper .link-widget li a:hover {
+  color: var(--primaryColor);
+  margin-left: 0.625rem;
+}
+
+.footer_wrapper .social-network a {
+  width: 2.1875rem;
+  height: 2.1875rem;
+  margin: 0.5rem;
+  line-height: 2rem;
+  font-size: 0.875rem;
+  display: inline-block;
+  border-radius: 100%;
+  border: 0.125rem solid var(--mainGrey);
+  color: var(--mainGrey);
+  text-align: center;
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.footer_wrapper .social-network a:hover {
+  background-color: var(--primaryColor);
+  border-color: var(--primaryColor);
+  color: var(--textGray);
+  transform: translateY(-0.1875rem);
+  box-shadow: 0.625rem 0.9375rem 0 rgb(0 0 0/10%);
+}
+.footer_wrapper .form-control:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: var(--primaryColor);
+}
+
+.footer_wrapper .copyright-section {
+  background-color: var(--secondaryColor);
+  padding: 1.25rem 0.3125rem;
+  text-align: center;
+}
+.footer_wrapper .copyright-section a {
+  color: var(--primaryColor);
 }
